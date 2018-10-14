@@ -19,8 +19,9 @@ handleChange = event => {
   handleSubmit = event => {
     event.preventDefault()
 
-    if (!this.state.username || !this.state.password) return
-
+    if (!this.state.username || !this.state.password){
+      return
+    }
     this.props.onSubmit(this.state)
 }
 
