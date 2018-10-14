@@ -27,17 +27,17 @@ handleChange = event => {
 
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <div>
           <label>
             Username
-            <input id="username" name="username" type="text" />
+            <input id="username" name="username" type="text" onChange={this.handleChange} />
           </label>
         </div>
         <div>
           <label>
             Password
-            <input id="password" name="password" type="password" />
+            <input id="password" name="password" type="password" onChange={this.handleChange} />
           </label>
         </div>
         <div>
