@@ -9,7 +9,7 @@ class TwitterMessage extends React.Component {
     };
   }
   
-   maxCharacters = () => {
+   maxCharacters = event => {
     this.setState({
       characters: event.target.value,
     });
