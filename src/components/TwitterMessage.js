@@ -6,12 +6,18 @@ class TwitterMessage extends React.Component {
 
     this.state = {};
   }
+  
+   maxCharacters = () => {
+    this.setState({
+      timesClicked: ++this.state.timesClicked,
+    });
+}
 
   render() {
     return (
       <div>
         <strong>Your message:</strong>
-        <input type="text" onChange={this.} />
+        <input type="text" onChange={this.maxCharacters} />
       </div>
     );
   }
